@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1> We are Learning Js</h1>
+	<h1 class="para myclass">Hello World</h1>
+	<h2>Now</h2>
+	<p class="para">Hello<span class="myspan">Pune</span>
+		<em>World</em><span class="myspan">Bye</span>
+	</p>
+	<div id="show">
+		<p>1st p inside div</p>
+		<p class="para">2nd p inside div</p>
+	</div>
+	<p id="show1">I am paragraph</p>
+	<div id="show2"> i am Somthing div</div>
+	<div>Hi hello.....</div>
+	<script type="text/javascript">
+		//More Specific
+		var data=document.getElementById("show");
+		var result=data.querySelectorAll("span.myspan");
+		document.write(result);
+		console.log(result);
+
+
+		var result=document.getElementById("show").querySelectorAll("span.myspan");
+		document.write(result);
+		console.log(result);
+
+
+		var result=document.querySelectorAll("#show>para>span.myspan");
+		document.write(result);
+		console.log(result);
+
+	</script>
+
+</body>
+</html>
