@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>we are Learning Js</h1>
+	<h1 class="para myclass">hello world</h1>
+	<h2>Now</h2>
+	<p class ="para">Hello<span>Pune</span><em>world</em>
+		<span>js</span></p>
+		<p class="myclass"><span>Bye</span>Pune</p>
+		<div id="show">
+			<p>1st p inside div</p>
+			<p class="para">2nd p inside div</p>
+			<script type="text/javascript">
+				//loop
+		/*		var result=document.getElementsByClassName("para")[0];
+				document.write(result);
+				console.log(result);
+
+*/
+
+
+			var data=document.getElementsByClassName("para");
+				var len=data.lenght;
+				for(let i=0;i<len;i++)
+				{
+					var result=document.getElementsByClassName("para")[i];
+					document.write(result +"<br>");
+					console.log(result);
+
+
+				}
+
+				//for of loop
+				for (const elm of data)
+				{
+					document.write(elm+"<br>");
+					console.log(elm);
+				}
+			
+
+			</script>
+
+
+</body>
+</html>
